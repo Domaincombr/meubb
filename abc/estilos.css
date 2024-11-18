@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle,rgb(0, 30, 255),red);
+    font-family: Arial, sans-serif;
+    font-size: 5rem;
+}
+
+.heart {
+    cursor: pointer;
+    font-size: 180px;
+    transition: transform 0.2s ease-in-out;
+    animation:  mover 0.2s infinite alternate-reverse;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart:hover {
+    transform: scale(1.1);
+}
+
+@keyframes mover{
+    to{
+        transform: scale(1.0);
+    }
+    from{
+        transform: scale(1.1);
+    }
+}
